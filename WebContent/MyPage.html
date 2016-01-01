@@ -17,7 +17,7 @@
         <!-- CSS -->
         <link href="css/app.css" rel="stylesheet">
         <link href="css/app_002.css" rel="stylesheet">
-       
+         
         
     <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
     <body class="" style="background-image: url(indian-flag.jpg); background-repeat: repeat; background-attachment: fixed;">
@@ -87,9 +87,19 @@
           
             <section id="content">
                 <div class="container">
-            <div id="pages">
+            <div id="pages" class="page">
                     
 					 <div class="row">
+					 	<div class="col-md-4">
+					 	<div class="card">
+                                <div class="card-header">
+					 				<h2>Lok Sabha Election Polls for Top 3 Parties(1991 Onwards)</h2></div>
+					 				
+					 				<div class=" pull-right">Select Year:<select id="drpdown" onchange="changeData()"><option>2014</option><option>2009</option><option>2004</option><option>1999</option><option>1998</option><option>1996</option><option>1991</option></select>
+					 	&nbsp;</div><div align="center" class="DonutChartP"></div>
+					 	
+					 	</div></div>
+					 
 					   <!-- **************************************************************************************8 -->
                 <div class="col-md-12">
                             <div class="card">
@@ -381,6 +391,11 @@
         <!--[if IE 9 ]>
             <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
         <![endif]-->
+        <script src="js/d33.js"></script>
+        <script src="js/Donut3D.js"></script>
+       <script src="js/changingpie.js">
+       
+       </script>
         
         <script src="js/curved-line-chart.js"></script>
         <script src="js/line-chart.js"></script>
