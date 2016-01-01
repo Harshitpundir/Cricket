@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+
+        <!-- Vendor CSS -->
+        <!-- <link href="css/fullcalendar.css" rel="stylesheet"> -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/sweet-alert.css" rel="stylesheet">
+        <link href="css/material-design-iconic-font.css" rel="stylesheet">
+        <link href="css/jquery.css" rel="stylesheet">        
+            
+        <!-- CSS -->
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/app_002.css" rel="stylesheet">
+       
+        
+    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+    <body class="" style="background-image: url(indian-flag.jpg); background-repeat: repeat; background-attachment: fixed;">
+        <header id="header" class="clearfix" data-current-skin="blue">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar" style="margin-top: 30px">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div >
+                </li>
+
+                <li class="logo" style="margin-top: 5px;">
+                    <a href="/Cricket" style="font-family: Times New Roman; font-size: 14pt; font-weight: bold;" ><div align="center" style="color: orange;">ScoreBoard</div><div align="center">of</div><div align="center" style="color: green;">INDIA</div></a>
+                </li>
+          
+			
+				<li class="pull-right" style="margin-top: 35px">
+					<ul class="top-menu">
+						<li id="top-search"><a href=""><i
+								class="tm-icon zmdi zmdi-search"></i></a></li>
+					</ul>
+				</li>
+		</ul>
+
+
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <div class="tsw-inner">
+                    <i id="top-search-close" class="zmdi zmdi-arrow-left"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </header>
+        
+        <section id="main" data-layout="layout-1">
+            <aside style="overflow: visible; background-color: #2196f3;" id="sidebar" class="sidebar c-overflow mCustomScrollbar _mCS_1 mCS-autoHide"><div tabindex="0" id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical_horizontal mCSB_outside"><div id="mCSB_1_container" class="mCSB_container mCS_x_hidden mCS_no_scrollbar_x" style="position: relative; top: 0px; left: 0px; width: 100%;" dir="ltr">
+                
+                <ul class="main-menu">
+                    <li id="mai" class="active">
+                        <a href="/Cricket"><i class="zmdi zmdi-home"></i> Home</a>
+                    </li>
+                    <li id="IP" class="">
+                        <a class="ipl" href="#IPL"><i class="zmdi zmdi-view-compact"></i> IPL</a>
+					</li>
+                    <li id="OD" class=""><a class="odi" href="#ODI"><i class="zmdi zmdi-format-underlined"></i>ODI</a></li>
+                    <li id="TS" class="">
+                        <a class="test" href="#Test"><i class="zmdi zmdi-widgets"></i> Test</a>
+                    </li>
+                    <!-- <li class="">
+                        <a href="#Add"><i class="zmdi zmdi-view-list"></i> AddMatchData</a>
+                    </li> -->
+                </ul>
+            </div>
+		</div>
+	<div style="display: block;" id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 401px; max-height: 557px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div><div style="display: none;" id="mCSB_1_scrollbar_horizontal" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_horizontal"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_horizontal" class="mCSB_dragger" style="position: absolute; min-width: 50px; width: 0px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
+            
+  <aside style="overflow: visible;" id="chat" class="sidebar c-overflow mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar" >
+  <div tabindex="0" id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical_horizontal mCSB_outside" >
+  <div id="mCSB_2_container" class="mCSB_container mCS_x_hidden mCS_no_scrollbar_x mCS_y_hidden mCS_no_scrollbar_y" style="position: relative; top: 0px; left: 0px; width: 100%;" dir="ltr">
+            
+            </div>
+			</div>
+			</aside>
+            
+          
+            <section id="content">
+                <div class="container">
+            <div id="pages">
+                    
+					 <div class="row">
+					   <!-- **************************************************************************************8 -->
+                <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>INDIA's Away Record Year over Year(1970 Onwards)</h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown action-show">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                            
+                                            <div class="dropdown-menu pull-right">
+                                                <p class="p-20">
+                                                    You can put anything here
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-body card-padding-sm">
+                                    <div id="bar-chart" class="flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 36px; text-align: center;">1</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 104px; text-align: center;">2</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 172px; text-align: center;">3</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 240px; text-align: center;">4</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 308px; text-align: center;">5</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 376px; text-align: center;">6</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 444px; text-align: center;">7</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 175px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 12px; text-align: right;">0</div><div style="position: absolute; top: 140px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">25</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 71px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">75</div><div style="position: absolute; top: 36px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">125</div></div></div><canvas class="flot-overlay" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas></div>
+                                    <div class="flc-bar"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Tokyo</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Seoul</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Beijing</td></tr></tbody></table></div>
+                                </div>
+                            </div>
+                        </div>
+                  <!-- ********************************************************************************************************** -->     
+                   <!-- **************************************************************************************8 -->
+                <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>INDIA's Home Record Year over Year(1970 Onwards)</h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown action-show">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                            
+                                            <div class="dropdown-menu pull-right">
+                                                <p class="p-20">
+                                                    You can put anything here
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-body card-padding-sm">
+                                    <div id="bar-char" class="flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 36px; text-align: center;">1</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 104px; text-align: center;">2</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 172px; text-align: center;">3</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 240px; text-align: center;">4</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 308px; text-align: center;">5</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 376px; text-align: center;">6</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 444px; text-align: center;">7</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 175px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 12px; text-align: right;">0</div><div style="position: absolute; top: 140px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">25</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 71px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">75</div><div style="position: absolute; top: 36px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">125</div></div></div><canvas class="flot-overlay" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas></div>
+                                    <div class="flc-bar"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Tokyo</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Seoul</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Beijing</td></tr></tbody></table></div>
+                                </div>
+                            </div>
+                        </div>
+                          <!-- **************************************************************************************8 -->
+                <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>WorldCup Run Rate (Since 1975)</h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown action-show">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                            
+                                            <div class="dropdown-menu pull-right">
+                                                <p class="p-20">
+                                                    You can put anything here
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-body card-padding-sm">
+                                    <div id="bar-cha" class="flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 36px; text-align: center;">1</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 104px; text-align: center;">2</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 172px; text-align: center;">3</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 240px; text-align: center;">4</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 308px; text-align: center;">5</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 376px; text-align: center;">6</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 444px; text-align: center;">7</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 175px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 12px; text-align: right;">0</div><div style="position: absolute; top: 140px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">25</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 71px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">75</div><div style="position: absolute; top: 36px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">125</div></div></div><canvas class="flot-overlay" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas></div>
+                                    <div class="flc-bar"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Tokyo</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Seoul</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Beijing</td></tr></tbody></table></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- **************************************************************************************8 --><div class="col-md-3"></div>
+                <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>ODI Per Country/year (1995 Onwards)</h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown action-show">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                            
+                                            <div class="dropdown-menu pull-right">
+                                                <p class="p-20">
+                                                    You can put anything here
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="card-body card-padding-sm">
+                                    <div id="bar-chat" class="flot-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 36px; text-align: center;">1</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 104px; text-align: center;">2</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 172px; text-align: center;">3</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 240px; text-align: center;">4</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 308px; text-align: center;">5</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 376px; text-align: center;">6</div><div style="position: absolute; max-width: 58px; top: 186px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 444px; text-align: center;">7</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 175px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 12px; text-align: right;">0</div><div style="position: absolute; top: 140px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">25</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 71px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 7px; text-align: right;">75</div><div style="position: absolute; top: 36px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 2px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 10px; line-height: 13px; font-family: roboto; color: rgb(159, 159, 159); left: 1px; text-align: right;">125</div></div></div><canvas class="flot-overlay" width="466" height="200" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 466px; height: 200px;"></canvas></div>
+                                    <div class="flc-bar"><table style="font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Tokyo</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Seoul</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Beijing</td></tr></tbody></table></div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                  <!-- ********************************************************************************************************** -->  
+                   
+                        <div class="col-sm-4">
+                            <div id="todo-lists">
+                                <div class="tl-header">
+                                    <h2>IPL Fixtures</h2>
+                                 
+                                </div>
+                                    
+                                <div class="clearfix"></div>
+                                    
+                                <div class="tl-body">  
+                                    <div class="checkbox media">
+                                        <div class="media-body">
+                                            <div class="IPLFix">
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                         <div class="col-sm-4">
+                            <div id="todo-lists">
+                                <div class="tl-header">
+                                    <h2>ODI Fixtures</h2>
+                                    
+                                </div>
+                                    
+                                <div class="clearfix"></div>
+                                    
+                                <div class="tl-body">  
+                                    <div class="checkbox media">
+                                        <div class="media-body">
+                                        	<div class="ODIFix" style="font:">
+                                        	<label>
+                                        	
+                                        	
+                                        	<span style="font-size: 16pt;">Date and Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fixture</span>
+                                        	</label>
+                                        	<br><br>
+                                        	<label><input type="checkbox" checked disabled="disabled"><i class="input-helper"></i><span>13-11-2015 9:30&nbsp;&nbsp;&nbsp;India V/s SouthAfrica</span></label><br><br>
+                                        	</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-sm-4">
+                            <div id="todo-lists">
+                                <div class="tl-header">
+                                    <h2>Test Match Fixtures</h2>
+                                    
+                                </div>
+                                    
+                                <div class="clearfix"></div>
+                                    
+                                <div class="tl-body">  
+                                    <div class="checkbox media">
+                                        <div class="media-body">
+                                        	<div class="TestFix" style="font:">
+                                        	<label>
+                                        	
+                                        	
+                                        	<span style="font-size: 16pt;">Date and Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fixture</span>
+                                        	</label>
+                                        	<br><br>
+                                        	<label><input type="checkbox" checked disabled="disabled"><i class="input-helper"></i><span>02-12-2015 9:30&nbsp;&nbsp;&nbsp;India V/s SouthAfrica</span></label><br><br>
+                                        	</div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                           
+                        
+                      </div>
+                </div>
+                </div>
+                   
+            </section>
+        </section>
+        
+        <footer id="footer">
+            Copyright © 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+
+        <!-- Page Loader -->
+        <div style="display: none;" class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"></circle>
+                </svg>
+
+                <p>Please wait...</p>
+            </div>
+        </div>
+        
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>   
+        <![endif]-->
+        
+        <!-- Javascript Libraries -->
+         
+        <script src="js/jquery_007.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src=js/ipl.js></script>
+        <script src="js/jquery_006.js"></script>
+        <script src="js/jquery_002.js"></script>
+        <script src="js/curvedLines.js"></script>
+        <script src="js/jquery_004.js"></script>
+        <script src="js/jquery_005.js"></script>
+         <script src="js/jquery.flot.js"> </script>
+        <script src="js/moment.js"></script>
+        <script src="js/bar-chart.js"></script> 
+         <script src="js/jquery.js"></script>
+      <script src="js/bar-chart2.js"></script>
+      <script src="js/bar-chart3.js"></script>
+      <script src="js/bar-chart4.js"></script>
+        <script src="js/waves.js"></script>
+        <script src="js/bootstrap-growl.js"></script>
+        <script src="js/sweet-alert.js"></script>
+        <script src="js/jquery_003.js"></script>
+        <script src="js/Fixture.js"> </script>
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        
+        <script src="js/curved-line-chart.js"></script>
+        <script src="js/line-chart.js"></script>
+      
+        <script src="js/functions.js"></script>
+      <script src="js/jquery.flot.orderBars.js"></script>
+	<script src="js/jquery.flot.resize.js"> </script>
+        
+    
+  
+  </body>
+  </html>

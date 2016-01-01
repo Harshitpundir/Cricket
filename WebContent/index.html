@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+  		<link href="Css/fullcalendar.min.css" rel="stylesheet">
+        <link href="Css/animate.min.css" rel="stylesheet">
+        <link href="Css/sweet-alert.css" rel="stylesheet">
+        <link href="Css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="Css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="Css/app.min.1.css" rel="stylesheet">
+        <link href="Css/app.min.2.css" rel="stylesheet">  
+        <link href="Css/ifg.css" rel="stylesheet"> 
+        <link href="Css/screen_preview.css" rel="stylesheet"> 
+          <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style>        
+			
+	<script src="javascript/jquery-1.11.3.js"> </Script>
+	<script src="javascript/ga.js"> </Script>
+	<script src="javascript/bootstrap-growl.min.js"> </Script>
+	<script src="javascript/bootstrap.js"> </Script>
+	<script src="javascript/charts.js"> </Script>
+	<script src="javascript/demo.js"> </Script>
+	<script src="javascript/functions.js"> </Script>
+	<script src="javascript/jquery.easypiechart.min.js"> </Script>
+	<script src="javascript/jquery.flot.js"> </Script>
+	<script src="javascript/jquery.flot.resize.js"> </Script>
+	<script src="javascript/jquery.mCustomScrollbar.concat.min.js"> </Script>
+	<script src="javascript/jquery.simpleWeather.min.js"> </Script>
+	<script src="javascript/jquery.sparkline.min.js"> </Script>
+	<script src="javascript/line-chart.js"> </Script>
+	<script src="javascript/sweet-alert.min.js"> </Script>
+	<script src="javascript/waves.min.js"> </Script>
+	<script src="javascript/Add_Data.js"> </script>
+	<script src="javascript/ODI.js"> </script>
+	<script src="javascript/Test.js"> </script>
+	<script src="javascript/AddData.js"> </script>
+	<script src="javascript/curvedLines.js"> </script>
+	<script src="javascript/curved-line-chart.js"> </script>
+	<script type="text/javascript">
+	var d1=[[1,200],[2,456],[3,34]];
+	$(document).ready(function () {
+	    $.plot($("#placeholder"), [d1]);
+	});
+
+	</script>
+</head>
+    <body>
+   
+        <header id="header" class="clearfix" data-current-skin="blue">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+
+                <li class="logo hidden-xs">
+                    <a href="#">Material Admin</a>
+                </li>
+
+                <li class="pull-right">
+                    <ul class="top-menu">
+                        <li id="toggle-width">
+                            <div class="toggle-switch">
+                                <input id="tw-switch" hidden="hidden" type="checkbox">
+                                <label for="tw-switch" class="ts-helper"></label>
+                            </div>
+                        </li>
+
+                        <li id="top-search">
+                            <a href=""><i class="tm-icon zmdi zmdi-search"></i></a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="">
+                                <i class="tm-icon zmdi zmdi-email"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="">
+                                <i class="tm-icon zmdi zmdi-notifications"></i>
+                            </a>
+                            </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" href="">
+                                <i class="tm-icon zmdi zmdi-view-list-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <div class="tsw-inner">
+                    <i id="top-search-close" class="zmdi zmdi-arrow-left"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </header>
+        
+        <section id="main" data-layout="layout-1">
+            <aside style="overflow: visible;" id="sidebar" class="sidebar c-overflow mCustomScrollbar _mCS_1 mCS-autoHide"><div tabindex="0" id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical_horizontal mCSB_outside"><div id="mCSB_1_container" class="mCSB_container mCS_x_hidden mCS_no_scrollbar_x" style="position: relative; top: 0px; left: 0px; width: 100%;" dir="ltr">
+                <div class="profile-menu">
+                    <a href="">
+                        <div class="profile-pic">
+                            <img class="mCS_img_loaded" src="1-5-2_data/1.jpg" alt="">
+                        </div>
+
+                        <div class="profile-info">
+                            Harshit Pundir
+
+                            <i class="zmdi zmdi-caret-down"></i>
+                        </div>
+                    </a>
+
+                    <ul class="main-menu">
+                        <li>
+                            <a href="http://192.185.228.226/projects/ma/1-5-2/jquery/profile-about.html"><i class="zmdi zmdi-account"></i> View Profile</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-input-antenna"></i> Privacy Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="main-menu">
+                    <li class="active">
+                        <a href=""><i class="zmdi zmdi-home"></i> Home</a>
+                    </li>
+		     <li class="">
+                        <a href=""><i class="zmdi zmdi-home"></i>IPL</a>
+                    </li>
+			 <li class="">
+                        <a href=""><i class="zmdi zmdi-home"></i>ODI</a>
+                    </li>
+                </ul>
+            </div></div><div style="display: block;" id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; display: block; height: 356px; max-height: 524px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div><div style="display: none;" id="mCSB_1_scrollbar_horizontal" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_horizontal"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_horizontal" class="mCSB_dragger" style="position: absolute; min-width: 50px; width: 0px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
+            
+            <aside style="overflow: visible;" id="chat" class="sidebar c-overflow mCustomScrollbar _mCS_2 mCS-autoHide mCS_no_scrollbar"><div tabindex="0" id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical_horizontal mCSB_outside"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y mCS_x_hidden mCS_no_scrollbar_x" style="position: relative; top: 0px; left: 0px; width: 100%;" dir="ltr">
+            
+<div style="display: none;" id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; height: 0px; top: 0px;" oncontextmenu="return false;"><div style="line-height: 50px;" class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div><div style="display: none;" id="mCSB_2_scrollbar_horizontal" class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_horizontal"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_horizontal" class="mCSB_dragger" style="position: absolute; min-width: 50px; width: 0px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
+            
+            <div id="main">
+            <div class="fill">
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Dashboard</h2>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Sales Statistics <small>Vestibulum purus quam scelerisque, mollis nonummy metus</small></h2>
+			</div> 
+                        <div class="card-body">
+                            <div class="chart-edge">
+                                <div style="padding: 0px; position: relative;" id="curved-line-chart" class="flot-chart "><canvas height="200" width="1158" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1158px; height: 200px;" class="flot-base"></canvas><canvas height="200" width="1158" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1158px; height: 200px;" class="flot-overlay"></canvas></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                                <div class="card-body m-t-0">
+                                    <table class="table table-inner table-vmiddle">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th style="width: 60px">Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="f-500 c-cyan">2569</td>
+                                                <td>Samsung Galaxy Mega</td>
+                                                <td class="f-500 c-cyan">$521</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="f-500 c-cyan">9658</td>
+                                                <td>Huawei Ascend P6</td>
+                                                <td class="f-500 c-cyan">$440</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="f-500 c-cyan">1101</td>
+                                                <td>HTC One M8</td>
+                                                <td class="f-500 c-cyan">$680</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="f-500 c-cyan">6598</td>
+                                                <td>Samsung Galaxy Alpha</td>
+                                                <td class="f-500 c-cyan">$870</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="f-500 c-cyan">4562</td>
+                                                <td>LG G3</td>
+                                                <td class="f-500 c-cyan">$690</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Todo Lists -->
+			<div class="col-sm-6">
+                            <div id="todo-lists">
+                                <div class="tl-header">
+                                    <h2>Todo Lists</h2>
+                                    <small>Add, edit and manage your Todo Lists</small>
+                                    
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Refresh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Manage Widgets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Widgets Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    
+                                <div class="clearfix"></div>
+                                    
+                                <div class="tl-body">
+                                    <div id="add-tl-item">
+                                        <i class="add-new-item zmdi zmdi-plus"></i>
+                                        
+                                        <div class="add-tl-body">
+                                            <textarea placeholder="What you want to do..."></textarea>
+                                            
+                                            <div class="add-tl-actions">
+                                                <a href="" data-tl-action="dismiss"><i class="zmdi zmdi-close"></i></a>
+                                                <a href="" data-tl-action="save"><i class="zmdi zmdi-check"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Duis vitae nibh molestie pharetra augue vitae</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>In vel imperdiet leoorbi mollis leo sit amet quam fringilla varius mauris orci turpis</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Suspendisse quis sollicitudin erosvel dictum nunc</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Curabitur egestas finibus sapien quis faucibusras bibendum ut justo at sagittis. In hac habitasse platea dictumst</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Suspendisse potenti. Cras dolor augue, tincidunt sit amet lorem id, blandit rutrum libero</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkbox media">
+                                        <div class="pull-right">
+                                            <ul class="actions actions-alt">
+                                                <li class="dropdown">
+                                                    <a href="" data-toggle="dropdown">
+                                                        <i class="zmdi zmdi-more-vert"></i>
+                                                    </a>
+                                                    
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="">Delete</a></li>
+                                                        <li><a href="">Archive</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Proin luctus dictum nisl id auctor. Nullam lobortis condimentum arcu sit amet gravida</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                       
+                            <!-- Recent Posts -->
+                               
+            </section></div></div>
+        </section>
+        
+        <footer id="footer">
+            Copyright © 2015 Material Admin
+            
+            <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Reports</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </footer>
+
+        <!-- Page Loader -->
+        <div style="display: none;" class="page-loader">
+            <div class="preloader pls-blue">
+                <svg class="pl-circular" viewBox="25 25 50 50">
+                    <circle class="plc-path" cx="50" cy="50" r="20"></circle>
+                </svg>
+
+                <p>Please wait...</p>
+            </div>
+        </div></div></body>
+ </html>
